@@ -11,16 +11,16 @@
   "url": "https://github.com/flobz/psa_car_controller",
   "startup": "application",
   "boot": "auto",
-  "ports_description": {"5000/tcp": "Web interface"},
+  "ports_description": {"5032/tcp": "Web interface"},
   "ports": {
-    "5000/tcp": null
+    "5032/tcp": null
     },
   "image": "flobz/psa_car_controller",
   "legacy": true,
   "ingress": true,
-  "ingress_port": 5000,
+  "ingress_port": 5032,
   "panel_icon": "mdi:car",
-  "environment": {"PSACC_PORT": "5000", "PSACC_CONFIG_DIR": "/data"},
+  "environment": {"PSACC_PORT": "5032", "PSACC_CONFIG_DIR": "/data"},
   "options": { "PSACC_OPTIONS": "-r --web-conf -c" },
   "schema": { "PSACC_OPTIONS": "str" }
 }
